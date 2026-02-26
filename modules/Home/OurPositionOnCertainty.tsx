@@ -5,79 +5,133 @@ const OurPositionOnCertainty = () => {
   return (
     <div
       style={{ backgroundImage: "url('/images/bg-blue.png')" }}
-      className="after-bg-blue relative bg-center bg-cover min-h-screen w-full text-white flex items-center justify-center py-4"
+      className="after-bg-blue relative bg-center bg-cover w-full text-white py-4"
     >
-      <div className="main-container relative z-10">
-        <h5>Fundamental Axioms</h5>
-        <div className="grid grid-cols-1 sm:grid-cols-2">
-          {/* COLUMN 1 */}
+      <div className="flex flex-col justify-between pt-12">
+        <div className="main-container relative z-10">
+          <h5 className="flex items-center gap-2 mb-10">
+            {" "}
+            <Image
+              src="/images/fundamental-axioms.svg"
+              alt="Fundamental Axioms"
+              width={19}
+              height={19}
+            />{" "}
+            <span className="text-[13px] font-medium tracking-[12%] uppercase text-primary-blue">
+              Fundamental Axioms
+            </span>
+          </h5>
           <div>
-            <h2>
-              Our Position on <span>Certainty</span>
-            </h2>
-            <div>
-              <h3>Human risk cannot be eliminated.</h3>
-              <h4>It can only be misjudged or managed.</h4>
-              <div className="line" />
-            </div>
-          </div>
-          {/* COLUMN 2 */}
-          <div>
-            <div>
-              <div>
-                <Image
-                  src="/images/principle.svg"
-                  alt="principle 1"
-                  width={19}
-                  height={19}
-                />
-                <div>
-                  <h5>Principle One</h5>
-                  <h4>We do not predict behavior.</h4>
-                  <h3>
-                    We model <span>risk probability.</span>
-                  </h3>
+            {/* Row 1 */}
+            <div className="flex justify-between gap-8 mb-8">
+              <h2 className="font-bold italic text-[99px] leading-[99.62px] max-w-154.5">
+                Our Position on{" "}
+                <span className="text-primary-blue">Certainty</span>
+              </h2>
+              <div className="p-8 space-y-8 rounded-[44px] border border-[#323948] bg-white text-black">
+                <div className="flex gap-4">
+                  <div className="bg-[#0F172A] w-11.25 h-11.25 flex items-center justify-center rounded-xl">
+                    <Image
+                      src="/images/principle.svg"
+                      alt="principle 1"
+                      width={22}
+                      height={22}
+                    />
+                  </div>
+                  <div className="space-y-2">
+                    <h5 className="font-medium uppercase tracking-[12%] text-[13px] text-primary-blue">
+                      Principle One
+                    </h5>
+                    <h4 className="font-semibold text-xl italic relative w-fit">
+                      <span>We do not predict behavior.</span>
+                      <div className="absolute top-1/2 right-3 -translate-y-1/2">
+                        <Image
+                          src="/images/curve-line.svg"
+                          alt="curve line"
+                          width={137}
+                          height={10}
+                        />
+                      </div>
+                    </h4>
+                    <h3 className="uppercase italic text-[32px] text-[#94A3B8] font-light leading-none">
+                      We model{" "}
+                      <span className="font-semibold">risk probability.</span>
+                    </h3>
+                  </div>
                 </div>
+                <div className="line h-px max-w-129.5 bg-[#DFE9F7]" />
+                <p className="text-sm text-[#94A3B8]">
+                  Predicting specific outcomes is a fallacy of standard
+                  diligence. We provide a statistical framework for behavioral
+                  variance.
+                </p>
               </div>
-              <div className="line" />
-              <p>
-                Predicting specific outcomes is a fallacy of standard diligence.
-                We provide a statistical framework for behavioral variance.
-              </p>
             </div>
-            <div>
-              <div>
-                <Image
-                  src="/images/principle.svg"
-                  alt="principle 1"
-                  width={19}
-                  height={19}
-                />
-                <div>
-                  <h5>Principle Two</h5>
-                  <h4>We do not determine decisions.</h4>
-                  <h3>
-                    We inform <span>consequences.</span>
-                  </h3>
-                </div>
+            {/* Row 2 */}
+            <div className="flex justify-between gap-8">
+              <div className="bg-[#1A2233]/55 space-y-4 p-8 rounded-[44px] border border-[#323948]">
+                <h3 className="italic font-bold text-[48px] leading-none">
+                  Human risk cannot be eliminated.
+                </h3>
+                <h4 className="font-medium uppercase text-[26px] text-primary-blue">
+                  It can only be misjudged or managed.
+                </h4>
+                <div className="line h-1.5 w-26.25 bg-primary-blue rounded-xl box-shadow-blue" />
               </div>
-              <div className="line" />
-              <p>
-                Our intelligence is an instrument for leadership, not a
-                replacement for it. We map the terrain; the path remains yours.
-              </p>
+              <div className="p-8 space-y-8 rounded-[44px] border border-[#323948] bg-white text-black">
+                <div className="flex gap-4">
+                  <div className="bg-[#0F172A] w-11.25 h-11.25 flex items-center justify-center rounded-xl">
+                    <Image
+                      src="/images/principle.svg"
+                      alt="principle 1"
+                      width={22}
+                      height={22}
+                    />
+                  </div>
+                  <div className="space-y-2">
+                    <h5 className="font-medium uppercase tracking-[12%] text-[13px] text-primary-blue">
+                      Principle Two
+                    </h5>
+                    <h4 className="font-semibold text-xl italic relative w-fit">
+                      <span>We do not predict behavior.</span>
+                      <div className="absolute top-1/2 right-3 -translate-y-1/2">
+                        <Image
+                          src="/images/curve-line.svg"
+                          alt="curve line"
+                          width={137}
+                          height={10}
+                        />
+                      </div>
+                    </h4>
+                    <h3 className="uppercase italic text-[32px] text-[#94A3B8] font-light leading-none">
+                      We inform{" "}
+                      <span className="font-semibold">consequences.</span>
+                    </h3>
+                  </div>
+                </div>
+                <div className="line h-px max-w-129.5 bg-[#DFE9F7]" />
+
+                <p className="text-sm text-[#94A3B8]">
+                  Our intelligence is an instrument for leadership, not a
+                  replacement for it. We map the terrain; the path remains
+                  yours.
+                </p>
+              </div>
             </div>
           </div>
         </div>
+        <ul className="flex items-center justify-center font-medium text-[13px] uppercase tracking-[26%] text-[#94A3B8] border-t border-t-[#323948] mt-32 pt-4">
+          <li>Probability Modeling</li>
+          <li>
+            <Dot className="text-primary-blue"/>
+          </li>
+          <li>Risk Visibility</li>
+          <li>
+            <Dot className="text-primary-blue"/>
+          </li>
+          <li>Institutional Security</li>
+        </ul>
       </div>
-      <div className="line"/>
-      <ul>
-        <li>Probability Modeling</li>
-        <li><Dot /></li>
-        <li>Risk Visibility</li>
-        <li><Dot /></li>
-        <li>Institutional Security</li>
-      </ul>
     </div>
   );
 };

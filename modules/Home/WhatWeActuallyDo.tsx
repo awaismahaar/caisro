@@ -5,25 +5,25 @@ const WhatWeActuallyDo = () => {
   return (
     <div
       style={{ backgroundImage: "url('/images/intellegence-pillar-main.png')" }}
-      className="after-bg-layer relative bg-center bg-cover min-h-screen w-full text-white flex items-center justify-center py-4"
+      className="after-bg-layer relative bg-center bg-cover w-full text-white py-10 sm:py-16 lg:py-20"
     >
       <div className="main-container relative z-10 text-center">
         <div className="flex flex-col gap-10">
           <div>
-            <h6 className="text-primary-blue uppercase tracking-[12%] font-medium text-[13px]">
+            <h6 className="blue-little-text">
               Intelligence Pillars
             </h6>
-            <h2 className="font-semibold text-[42px]">What We Actually Do</h2>
-            <p className="text-sm font-light">
+            <h2 className="heading-h2-lg">What We Actually Do</h2>
+            <p className="light-paragraph">
               We surface human risks that financial, legal, and operational
               diligence cannot.
             </p>
           </div>
 
-          <h5 className="uppercase tracking-[114%] text-lg">
+          <h5 className="uppercase tracking-[24%] sm:tracking-[74%] lg:tracking-[114%] text-sm sm:text-base md:text-lg">
             Specifically, we assess
           </h5>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 text-left">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-left">
             <div className="flex flex-col items-start gap-2 p-5 bg-white text-black rounded-[22px] border border-[#F1F5F9] box-shadow-2">
               <div className="p-3 bg-primary-blue rounded-xl text-white">
                 <Shield size={18} />
@@ -94,7 +94,7 @@ const WhatWeActuallyDo = () => {
             </div>
           </div>
           <div className="px-4 py-2 border border-primary-blue max-w-214 mx-auto">
-            <p className="font-inter font-semibold text-[34px] leading-none uppercase opacity-24">
+            <p className="font-inter font-semibold text-[24px] sm:text-[28px] md:text-[34px] leading-none uppercase opacity-24">
               Not outcomes. Not recommendations. <br />
               <span className="text-[24px] leading-[134%] font-normal font-sansita-one">Risk visibility.</span>
             </p>

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Roboto, Inter } from "next/font/google";
+import { Roboto, Inter , DM_Sans} from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 
@@ -21,6 +21,11 @@ const inter = Inter({
   subsets: ["latin"],
   weight: ["300", "400", "500", "700"],
 });
+const dm_sans = DM_Sans({
+  variable: "--font-dm-sans",
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "700"],
+});
 
 export const metadata: Metadata = {
   title: "Caisro",
@@ -35,7 +40,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${roboto.variable} ${rockabilly.variable} ${sansita_one.variable} ${inter.variable} antialiased`}
+        className={`${roboto.variable} ${rockabilly.variable} ${sansita_one.variable} ${inter.variable} ${dm_sans.variable} antialiased`}
       >
         {children}
       </body>

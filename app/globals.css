@@ -15,6 +15,9 @@
   --font-inter: var(--font-inter);
   --font-rockabilly: var(--font-rockabilly);
   --font-sansita-one: var(--font-sansita-one);
+  --font-dm-sans: var(--font-dm-sans);
+  --shadow-blue: 0px 8px 25.5px 0px rgba(37, 99, 235, 0.36);
+  --shadow-white: 0px 8px 25.5px 0px rgba(255, 255, 255, 0.36);
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -31,9 +34,43 @@ body {
   font-weight: 400;
 }
 .main-container {
-  max-width: 1300px;
+  max-width: 1253px;
   margin: 0 auto;
   padding: 0 16px;
+}
+.heading-h2 {
+  @apply text-[26px] lg:text-[32px] font-semibold;
+}
+.heading-h3 {
+  @apply font-semibold text-[28px] md:text-[26px] lg:text-[34px] xl:text-[42px];
+}
+.heading-normal {
+  @apply text-base sm:text-lg font-semibold;
+}
+.heading-h2-lg {
+  @apply font-semibold text-[32px] md:text-[36px] lg:text-[42px];
+}
+.light-paragraph {
+  @apply text-sm font-light;
+}
+.paragraph-light-main {
+  @apply text-sm text-[#94A3B8];
+}
+.blue-little-text {
+  @apply text-primary-blue uppercase tracking-[12%] font-medium text-sm sm:text-[13px];
+}
+.box-blur-1 {
+  width: 320px;
+  height: 320px;
+  background: rgba(27, 49, 52, 1);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
+  filter: blur(200px);
+  z-index: -1;
+  pointer-events: none;
 }
 
 .main-navbar {
@@ -51,6 +88,13 @@ body {
 .box-shadow-blue {
   box-shadow: 0px 8px 25.5px 0px rgba(37, 99, 235, 0.36);
 }
+.box-shadow-black {
+  box-shadow: 0px 8px 25.5px 0px rgba(0, 0, 0, 0.36);
+}
+
+.main-btn {
+  @apply flex items-center justify-center gap-2 text-sm sm:text-[15px] px-4 sm:px-6 py-3 rounded-[22px] transition-all duration-300;
+}
 
 .linear-g-blue {
   background: linear-gradient(90deg, #2563eb 0%, #153885 100%);
@@ -62,7 +106,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7); /* Adjust the opacity as needed */
+  background-color: rgba(0, 0, 0, 0.8); /* Adjust the opacity as needed */
   /* z-index: -1; */
 }
 .after-bg-blue::after {
@@ -72,6 +116,17 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background : url("/images/tiny-dots.png") repeat center center;
+  background: url("/images/tiny-dots.png") repeat center center;
+  /* z-index: -1; */
+}
+.after-bg-blue-lines-group::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("/images/lines-group.png") repeat center center;
+  border-radius: 44px;
   /* z-index: -1; */
 }

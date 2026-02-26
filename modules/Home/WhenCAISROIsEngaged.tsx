@@ -3,12 +3,12 @@ import Image from "next/image";
 
 const WhenCAISROIsEngaged = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center w-full text-black py-10">
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8 lg:gap-20">
+    <div className="w-full relative z-10 text-black py-10 sm:py-16 lg:py-28">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 lg:gap-20">
         {/* COLUMN 1 */}
         <div className="flex flex-col gap-6">
           <div>
-            <h2 className="text-[32px] font-semibold">
+            <h2 className="heading-h2">
               When CAISRO Is Engaged
             </h2>
             <div className="flex gap-2 items-center">
@@ -18,13 +18,13 @@ const WhenCAISROIsEngaged = () => {
                 width={19}
                 height={19}
               />
-              <span className="uppercase text-[13px] font-medium text-primary-blue tracking-[12%]">
+              <span className="uppercase text-xs lg:text-[13px] font-medium text-primary-blue tracking-[12%]">
                 CAISRO is typically engaged when:
               </span>
             </div>
           </div>
           <div className="py-4 flex flex-col gap-4">
-            <div className="flex items-center gap-4 p-5 rounded-[22px] border border-[#BFDBFE] box-shadow">
+            <div className="flex items-center gap-4 p-5 bg-white rounded-[22px] border border-[#BFDBFE] box-shadow">
               <div className="p-3 bg-primary-blue rounded-xl text-white">
                 <ArrowRight size={18} />
               </div>
@@ -35,7 +35,7 @@ const WhenCAISROIsEngaged = () => {
                 </p>
               </div>
             </div>
-            <div className="flex items-center gap-4 p-5 rounded-[22px] border border-[#F1F5F9]">
+            <div className="flex items-center gap-4 p-5 bg-white rounded-[22px] border border-[#F1F5F9]">
               <div className="p-3 bg-[#EFF6FF] rounded-xl text-primary-blue">
                 <ArrowRight size={18} />
               </div>
@@ -46,7 +46,7 @@ const WhenCAISROIsEngaged = () => {
                 </p>
               </div>
             </div>
-            <div className="flex items-center gap-4 p-5 rounded-[22px] border border-[#F1F5F9]">
+            <div className="flex items-center gap-4 p-5 bg-white rounded-[22px] border border-[#F1F5F9]">
               <div className="p-3 bg-[#EFF6FF] rounded-xl text-primary-blue">
                 <ArrowRight size={18} />
               </div>
@@ -57,7 +57,7 @@ const WhenCAISROIsEngaged = () => {
                 </p>
               </div>
             </div>
-            <div className="flex items-center gap-4 p-5 rounded-[22px] border border-[#F1F5F9]">
+            <div className="flex items-center gap-4 p-5 bg-white rounded-[22px] border border-[#F1F5F9]">
               <div className="p-3 bg-[#EFF6FF] rounded-xl text-primary-blue">
                 <ArrowRight size={18} />
               </div>
@@ -73,7 +73,7 @@ const WhenCAISROIsEngaged = () => {
         {/* COLUMN 2 */}
         <div className="flex flex-col gap-6">
           <div>
-            <h2 className="text-[32px] font-semibold">
+            <h2 className="heading-h2">
               When We Are Not Appropriate
             </h2>
             <div className="flex gap-2 items-center">
@@ -83,7 +83,7 @@ const WhenCAISROIsEngaged = () => {
                 width={19}
                 height={19}
               />
-              <span className="uppercase text-[13px] font-medium text-[#94A3B8] tracking-[12%]">
+              <span className="uppercase text-xs lg:text-[13px] font-medium text-[#94A3B8] tracking-[12%]">
                 CAISRO is not designed for:
               </span>
             </div>
@@ -142,6 +142,7 @@ const WhenCAISROIsEngaged = () => {
           </div>
         </div>
       </div>
+      <div className="box-blur-1"/>
     </div>
   );
 };
