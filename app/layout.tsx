@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Roboto, Inter , DM_Sans} from "next/font/google";
+import { Roboto, Inter , DM_Sans } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 
@@ -10,6 +10,10 @@ const rockabilly = localFont({
 const sansita_one = localFont({
   src: "../public/fonts/SansitaOne.ttf",
   variable: "--font-sansita-one",
+});
+const ah_naskh_hadith = localFont({
+  src: "../public/fonts/AhNaskhHadith.ttf",
+  variable: "--font-ah-naskh-hadith",
 });
 const roboto = Roboto({
   variable: "--font-roboto",
@@ -40,7 +44,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${roboto.variable} ${rockabilly.variable} ${sansita_one.variable} ${inter.variable} ${dm_sans.variable} antialiased`}
+        className={`${roboto.variable} ${rockabilly.variable} ${sansita_one.variable} ${inter.variable} ${dm_sans.variable} ${ah_naskh_hadith.variable} antialiased`}
       >
         {children}
       </body>

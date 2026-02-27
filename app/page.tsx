@@ -19,10 +19,10 @@ export default function Home() {
         <EngagementTimeline />
       </div>
       <OurPositionOnCertainty />
-      <div className="main-container">
+     <div className="main-container">
         <EngagementTypes />
       </div>
-      <Footer />
+     <Footer /> 
     </>
   );
 }

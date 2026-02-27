@@ -8,10 +8,10 @@ const MainHero = () => {
     <div className="text-white flex flex-col max-sm:gap-4 items-center justify-center py-6 px-4 min-h-[calc(100vh-158px)]">
       <div className="flex justify-center items-center gap-2 py-1 px-4 sm:px-10 rounded-[73px] border border-[#4A4A4A] backdrop-blur-[1px]">
         <Image src="/images/lock.svg" alt="lock" width={10} height={10} />
-        <span className="text-[12px]">Confidential Human Intelligence</span>
+        <span className="text-[12px] text-[#4A4A4A] uppercase">Confidential Human Intelligence</span>
       </div>
       <div className="text-center">
-        <h1 className="text-[42px] md:text-[56px] lg:text-[64px] font-bold leading-[1.2]">
+        <h1 className="text-[22px] md:text-[28px] mt-8 lg:text-[35px] font-bold font-ah-naskh-hadith leading-[65px] sm:leading-[90px]">
           Human Risk <br /> Intelligence
         </h1>
         <h2 className="text-[42px] md:text-[56px] lg:text-[64px] font-rockabilly leading-[1.2] text-[#60A5FA]">

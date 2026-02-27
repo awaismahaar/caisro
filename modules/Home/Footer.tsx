@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div className="border-t border-t-[#F1F5F9] pt-16">
       <div className="main-container">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 pb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-12  md:gap-4 pb-16">
           <div className="space-y-6">
             <Image
               src="/images/black-logo.svg"
@@ -125,9 +125,9 @@ const Footer = () => {
           </div>
         </div>
       </div>
-        <div className="border-t border-t-[#F1F5F9] py-6">
-          <ul className="main-container text-[#94A3B8] text-[13px] tracking-[45%] leading-[25px] font-dm-sans flex justify-between items-center gap-4">
-            <li>© 2026 CAISRO LLC</li>
+        <div className="border-t border-t-[#F1F5F9] py-4 md:py-6">
+          <ul className="main-container text-[#94A3B8] text-xs md:text-[13px] tracking-[15%] md:tracking-[45%] leading-[25px] font-dm-sans flex max-md:flex-col md:justify-between items-center gap-4">
+            <li>© {new Date().getFullYear()} CAISRO LLC</li>
             <ul className="flex gap-4">
               <li className="cursor-pointer hover:text-primary-blue">PRIVACY POLICY</li>
               <li className="cursor-pointer hover:text-primary-blue">TERMS OF USE</li>

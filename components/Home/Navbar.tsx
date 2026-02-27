@@ -13,8 +13,12 @@ interface NavRoutes {
 
 const navRoutes: NavRoutes[] = [
   {
-    name: "About CAISRO",
+    name: "Home",
     href: "/",
+  },
+  {
+    name: "About CAISRO",
+    href: "/about",
   },
   {
     name: "What We Assess",
@@ -51,7 +55,7 @@ const Navbar = () => {
           className="max-sm:w-[200px] max-sm:h-[30px] max-md:w-[290px] max-md:h-[38px]"
         />
       </div>
-      <div className="bg-primary-blue w-full py-2 px-4 m-0!">
+      <div className="bg-primary-blue/72 w-full py-2 px-4 m-0!">
         <div className="flex items-center justify-between gap-4">
           <Image
             src="/images/white-logo.svg"
@@ -78,7 +82,7 @@ const Navbar = () => {
                 {route.name}
               </Link>
               {route.href === pathname && (
-                <div className="absolute -bottom-2 left-0 w-2/3 h-px bg-[#D9D9D9]" />
+                <div className="absolute -bottom-2 left-0 w-full h-px bg-[#D9D9D9]" />
               )}
             </div>
           ))}
